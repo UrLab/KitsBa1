@@ -20,17 +20,10 @@ La première étape dans le développement arduino est le logiciel Arduino, disp
 Une fois le logiciel installé, vous pouvez le lancer et vous arriverez sur quelque chose qui ressemble à ceci :
 ![Interface Arduino](../../../images/arduino_ide.png)
 
-### 1)
-Cette partie est le menu de l'IDE. C'est de là qu'on va pouvoir changer le type de carte que l'on veut programmer, ouvrir un fichier, le sauvegarder, ...
-
-### 2)
-Cette partie possède les bouttons d'actions qui permetterons de compiler le code, et de l'envoyer sur l'arduino, ainsi que des bouttons pour ouvrir, sauvegarder et créer un nouveau fichier.
-
-### 3)
-Cette partie est la plus importante, c'est celle dans laquelle nous écrirons le code C qui sera exécuté sur notre arduino. Par défaut, l'IDE écrit déjà quelque lignes. Nous allons les analyser un peu plus loin.
-
-### 4)
-Cette dernière partie est la console. A cet endroit seront écrits des messages importants concernant la compilation[*](#index_compiler) du code et le transfert du code vers l'arduino.
+1) Cette partie est le menu de l'IDE. C'est de là qu'on va pouvoir changer le type de carte que l'on veut programmer, ouvrir un fichier, le sauvegarder, ...
+2) Cette partie possède les bouttons d'actions qui permetterons de compiler le code, et de l'envoyer sur l'arduino, ainsi que des bouttons pour ouvrir, sauvegarder et créer un nouveau fichier.
+3) Cette partie est la plus importante, c'est celle dans laquelle nous écrirons le code C qui sera exécuté sur notre arduino. Par défaut, l'IDE écrit déjà quelque lignes. Nous allons les analyser un peu plus loin.
+4) Cette dernière partie est la console. A cet endroit seront écrits des messages importants concernant la compilation[*](#index_compiler) du code et le transfert du code vers l'arduino.
 
 ## Analyse des premières lignes de code par défaut
 Jetons un oeil aux lignes de code écrites par défaut par l'IDE :
