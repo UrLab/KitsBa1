@@ -147,4 +147,4 @@ Voilà vous avez réussi à faire clignoter une LED sur votre arduino !
 ## <a name="index">Index</a>
 * <a name="index_compiler">**Compiler**</a>: convertir du code d'un langage lisible pour un humain en langage machine
 * <a name="index_flasher">**Flasher**</a>: Action de transférer un programme compilé sur la mémoire d'un arduino
-* <a name="index_download">**Televerser**</a>: transferer le code compilé sur l'arduino
+* <a name="index_download">**Televerser**</a>: transférer le code compilé sur l'arduino
