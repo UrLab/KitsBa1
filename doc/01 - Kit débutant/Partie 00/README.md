@@ -24,13 +24,15 @@ L'éléctronique est un vaste monde, rempli d'explosions surprises, d'éléctroc
 
 ## <a name="title_arduinosoft">Logiciel arduino</a>
 La première étape dans le développement arduino est le logiciel Arduino, disponible sur le [site officiel](https://www.arduino.cc/en/Main/Software) d'arduino. Pour l'installation du logiciel, il suffit de choisir votre système dans la liste proposée :
+
 ![Liste d'os disponibles](../../../images/arduino_dl.png)
 
 Une fois le logiciel installé, vous pouvez le lancer et vous arriverez sur quelque chose qui ressemble à ceci :
+
 ![Interface Arduino](../../../images/arduino_ide.png)
 
 1) Cette partie est le menu de l'IDE. C'est de là qu'on va pouvoir changer le type de carte que l'on veut programmer, ouvrir un fichier, le sauvegarder, ...
-2) Cette partie possède les bouttons d'actions qui permetterons de compiler le code, et de l'envoyer sur l'arduino, ainsi que des bouttons pour ouvrir, sauvegarder et créer un nouveau fichier.
+2) Cette partie possède les boutons d'actions qui permetterons de compiler le code, et de l'envoyer sur l'arduino, ainsi que des boutons pour ouvrir, sauvegarder et créer un nouveau fichier.
 3) Cette partie est la plus importante, c'est celle dans laquelle nous écrirons le code C qui sera exécuté sur notre arduino. Par défaut, l'IDE écrit déjà quelque lignes. Nous allons les analyser un peu plus loin.
 4) Cette dernière partie est la console. A cet endroit seront écrits des messages importants concernant la compilation[*](#index_compiler) du code et le transfert du code vers l'arduino.
 
@@ -107,7 +109,40 @@ Nous allons enfin tester le code que nous venons d'écrire en le transférant su
 
 ![Boutton download](../../../images/arduino_download.png)
 
-A ce moment là, une petite barre de progression apparaitra en bas, vous indiquant où en est le téléversement<a href="#index_download">*</a>. Une fois ce dernier terminé, vous devriez voir la LED `L` s'allumer.
+A ce moment là, une petite barre de progression apparaitra en bas, vous indiquant où en est le téléversement<a href="#index_download">*</a>. Une fois ce dernier terminé, vous devriez voir la LED `L` s'allumer. Cela signifie que notre code a bien été envoyé sur l'arduino est s'est exécuté correctement.
+
+### Etape 4)
+Maintenant que l'on a réussi à allumer la LED, on va essayer de la faire clignoter plus ou moins vite. Pour ce faire, on va utiliser la fonction `loop`, inutilisée jusqu'à maintenant. Faire clignoter une LED n'est au final que l'allumer et l'éteindre plus ou moins vite. Vous avez donc normalement toutes les cartes en main pour écrire ce code vous même. L'approche basique pour faire ce programme, serait de faire un code comme le suivant :
+
+```c
+void setup(){
+    pinMode(13, OUTPUT);
+}
+
+void loop(){ // Le code qui se répète tout le temps où l'arduino est allumé
+    digitalWrite(13, HIGH); // On allume la LED
+    digitalWrite(13, LOW); // On éteint la LED
+}
+```
+
+Le résultat de ce morceau de code pourrait cependant vous étonner. Tout ce que vous verrez sera une LED allumée mais plus faiblement qu'avant. Ce qu'il se passe, c'est que la LED clignote bien, mais tellement vite que ses états allumés et éteint ne sont pas distinguables. Pour pouvoir distinguer l'état allumé de l'état éteint, il faut ralentir la vitesse d'exécution de notre code. Pour ce faire, on va utiliser la fonction `delay`, qui permet de faire un pause dans le code. Cette fonction prend un nombre en paramètre. Ce paramètre est le nombre de milliseconde pendant lesquelles le programe sera en pause. En ajoutant cette fonction entre nos fonctions `digitalWrite`, on va pouvoir faire alterner les états de la LED plus lentement. Le code ressemblera plus à quelque chose comme ça :
+
+```c
+void setup(){
+    pinMode(13, OUTPUT);
+}
+
+void loop(){ // Le code qui se répète tout le temps où l'arduino est allumé
+    digitalWrite(13, HIGH); // On allume la LED
+    delay(500); // On attend 500 millisecondes
+    digitalWrite(13, LOW); // On éteint la LED
+    delay(500); // On attend 500 millisecondes
+}
+```
+
+Maintenant, notre led devrait s'allumer ou s'éteindre toutes les demi-secondes.
+
+Voilà vous avez réussi à faire clignoter une LED sur votre arduino !
 
 ## <a name="index">Index</a>
 * <a name="index_compiler">**Compiler**</a>: convertir du code d'un langage lisible pour un humain en langage machine
