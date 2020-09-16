@@ -103,8 +103,13 @@ void setup(){
 ```
 
 ### Etape 3)
-Nous allons enfin tester le code que nous venons d'écrire en le transférant sur l'Arduino. Pour ce faire, il suffit, une fois que l'arduino est correctement relié au PC (Voir <a href="#setup">Etape 1</a>).
+Nous allons enfin tester le code que nous venons d'écrire en le transférant sur l'Arduino. Pour ce faire, il suffit, une fois que l'arduino est correctement relié au PC (Voir <a href="#setup">Etape 1</a>), de cliquer sur le petit bouton avec un flèche.
+
+![Boutton download](../../../images/arduino_download.png)
+
+A ce moment là, une petite barre de progression apparaitra en bas, vous indiquant où en est le téléversement<a href="#index_download">*</a>. Une fois ce dernier terminé, vous devriez voir la LED `L` s'allumer.
 
 ## <a name="index">Index</a>
 * <a name="index_compiler">**Compiler**</a>: convertir du code d'un langage lisible pour un humain en langage machine
 * <a name="index_flasher">**Flasher**</a>: Action de transférer un programme compilé sur la mémoire d'un arduino
+* <a name="index_download">**Televerser**</a>: transferer le code compilé sur l'arduino
