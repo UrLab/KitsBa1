@@ -14,7 +14,7 @@
 
 (source [wikipédia](https://fr.wikipedia.org/wiki/Arduino))
 
-Concrètement, un arduino est un petit circuit imprimé, qui sert à facilement et rapidement fabriquer des projets d'électroniques. La carte contient un petit processeur (Atmega328p pour les UNO), qui peut être programmé pour émettre des signaux électriques, ou les recevoir. Tout au long de ce kit, nous allons voir ensemble comment réaliser des circuits simples au moyen d'un arduino, ainsi que les bases du langage de programmation C.
+Concrètement, un arduino est un petit circuit imprimé, qui sert à facilement et rapidement fabriquer des projets d'électroniques. La carte contient un petit processeur (Atmega328p pour les UNO, celui que vous avez dans votre kit), qui peut être programmé pour émettre des signaux électriques, ou les recevoir. Tout au long de ce kit, nous allons voir ensemble comment réaliser des circuits simples au moyen d'un arduino, ainsi que les bases du langage de programmation C.
 
 ## <a name="title_c">Pourquoi le C ?</a>
 Le C est le langage le plus utilisé dans la programmation de systèmes embarqués, et le langage supporté par l'IDE `(Integrated Development Environment)` Arduino, que nous allons utiliser tout au long de ces projets. Le C est un langage puissant, qui offre un grand contrôle sur son environement au développeur, mais reste néanmoins très accessible pour une utilisation basique. Le C est un langage compilé, ce qui veut dire qu'il ne peut être exécuté qu'après avoir été transformé en langage machine (en binaire).
