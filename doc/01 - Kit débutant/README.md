@@ -6,7 +6,7 @@ Un kit basique pour commencer à programmer sur arduino et à jouer avec un peu 
 * 1 * Half-sized Breadboard
 * 1 * Arduino UNO
 * 1 * cable USB A vers USB B
-* 4 * Switch 
+* 4 * Switch
 * 1 * Potentiomètre
 * 12 * LEDS
   * 4 * LED rouge
