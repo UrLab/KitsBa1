@@ -1,1 +1,1 @@
-## Partie 2 - Utilisation d'un potentiomètre
+# Partie 3 - Utilisation d'un potentiomètre

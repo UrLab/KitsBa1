@@ -1,1 +1,1 @@
-## Partie 2 - Utilisation d'un switch
+# Partie 2 - Utilisation d'un switch

@@ -1,4 +1,4 @@
-# Partie 01 - Jouer avec de l'electronique extérieure
+# Partie 01 - Les LEDS
 
 Dans cette seconde partie, nous allons commencer à jouer avec des composants éléctroniques extérieurs à l'arduino.
 

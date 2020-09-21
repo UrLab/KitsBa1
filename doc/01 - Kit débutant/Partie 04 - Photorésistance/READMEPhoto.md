@@ -1,4 +1,4 @@
-# Photoresistreur
+# Partie 4 - Utilisation d'une photorésistance
 
 Une photorésistance ou photocellule est une résistance variable commandée par la lumière. La résistance d'une photorésistance diminue avec l'augmentation de l'intensité de la lumière incidente. Une photorésistance peut être appliquée dans des circuits de détection sensibles à la lumière et des circuits de commutation activés par la lumière et l'obscurité (Camera de nuit p.e.). Elle est également appelée résistance dépendante de la lumière (RDL).
 

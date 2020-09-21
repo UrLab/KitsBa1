@@ -1,1 +1,1 @@
-### Partie 5 - Utilisation d'une thermistance
+# Partie 5 - Utilisation d'une thermistance
