@@ -14,13 +14,21 @@ La première chose que nous allons faire, est de faire comme dans la partie pré
 Une LED est une Diode Electroluminescente. Etant une diode, elle ne laisse passer le courant que dans un sens. Lorsque ce dernier traverse la diode, celle-ci émet de la lumière. Cela signifie que le sens d'une LED est important ! (voir <a href="led_leg">image</a>)
 Il faut également faire attention à la tension qui passe dans la LED (le voltage). Pour ceci, il faut utiliser une résistance, afin de réduire le voltage qui sort initialement de l'Arduino (+5V). On va donc devoir calculer la résistance nécessaire pour ne pas brûler la LED.
 
-<a name="led_leg">![LED + et -](../../../images/LED.jpg)</a>
-Différentiation des pattes d'une LED
+<a name="led_leg">![LED + et -](img/LEDlegs.png)</a>
 
-<a name="led_scheme">![LED scheme](../../../images/LED_scheme.jpg)</a>
-Schéma éléctrique d'une LED
+Différentiation des pattes d'une LED. La plus longue représente le côté qui se branche dans le **+**
+
+<a name="led_scheme">![LED scheme vs diode](img/ledvsdiode.png)</a>
+
+Schéma éléctrique d'une LED et d'une diode (On peut clairement voir les similarités)
 
 Vous avez probablement déjà vu que pour un circuit `V = RI` (Loi d'Ohm). Le <a href="index_voltage">voltage</a> est égal à la <a href="index_resistance">résistance</a> fois le <a href="index_courant">courant</a>. Sachant qu'une LED consomme plus ou moins 20mA (0.02 <a href="index_ampere">Ampères</a>) et qu'elle ne supporte pas plus de plus ou moins 2 <a href="index_voltage">Volts</a>, on peut facilement calculer la résistance minimale qu'il faut utiliser pour éviter de brûler notre LED. Dans notre cas, sachant la loi d'Ohm, on sait que `R = V/I`, donc `R = (5-3)/0.02 = 100 Ohms`. Il faut donc une résistance minimale de 100 Ohms. Dans le cadre de ce kit, nous utiliserons des résistances de 220 Ohms, pour être sûr de ne rien brûler.
+
+Pour utiliser cette résistance, il faut la placer en série avec la LED. La placer avant ou après celle-ci sur le circuit ne change rien. Les deux scémas suivant sont donc corrects.
+
+![Serie led - resistance](img/schemeledres.png)
+
+![Serie resistance - led](img/schemeresled.png)
 
 ## Index
 * <a name="index_voltage">**Voltage**</a>: Le voltage, ou tension, est la différence de potentiel entre deux bornes d'un <a href="index_dipole">dipôle</a>.
