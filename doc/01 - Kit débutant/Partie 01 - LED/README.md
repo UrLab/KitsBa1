@@ -28,10 +28,24 @@ Pour utiliser cette résistance, il faut la placer en série avec la LED. La pla
 
 ![Serie led - resistance](img/schemeledres.png)
 
-![Serie resistance - led](img/schemeresled.png)
+les composants notés R1 et R2 sont des résistances
+
+### Le circuit
+
+Pour pouvoir faire clignoter cette LED depuis l'arduino, il va donc falloir faire un circuit avec celui-ci. Le circuit que l'on va faire est très simple, on va avoir besoin de :
+* 2x Jumpers 10cm
+* 1x LED (rouge, verte ou bleue)
+* 1x Résistance 220 Ohm
+
+La résistance va donc être <a href="#mount_serial">montée en série*</a> avec la LED. Comme vu plus haut, le sens dans lequel la résistance est mise par rapport à la LED n'a pas d'importance.
 
 ## Index
 * <a name="index_voltage">**Voltage**</a>: Le voltage, ou tension, est la différence de potentiel entre deux bornes d'un <a href="index_dipole">dipôle</a>.
 * <a name="index_resistance">**Résistance**</a>: Composant (dipôle) régi par la loi d'Ohm, qui résiste au passage du courant.
 * <a name="index_ampere">**Ampère**</a>: Un ampère est une unité de mesure de courant. Le courant représente les *"nombre d'électrons qui passe dans une section de cable par unité de temps"*
 * <a name="index_dipole">**Dipole**</a>: Composant d'un circuit, possédant 2 pôles, une entrée et une sortie. (Exemples: une LED, une résistance, ...).
+* <a name="mount_serial">**Monté en série**</a>: Deux composant montés en série sont montés l'un à la suite de l'autre de sorte à ce que le courant doive d'abord passer dans le premier composant puis dans le second.
+![Montage en série](img/serial_mount.png)
+
+* <a name="mount_Parallel">**Monté en parallèle**</a>: Deux composant montés en parallèle sont montés côte à côte, de sorte à ce que le courant puisse passer au travers des deux en même temps.
+![Montage en parallèle](img/parallel_mount.png)
