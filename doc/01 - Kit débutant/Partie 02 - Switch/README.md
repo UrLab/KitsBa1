@@ -14,15 +14,15 @@ Pour cette partie, nous allons rajouter un bouton que nous allons utiliser de di
 ## L'interrupteur
 Un interrupteur est un dispositif permettant d'ouvrir une partie du circuit. Une fois le circuit ouvert, le courant ne peut plus passer. Par défaut l'interrupteur du kit garde le circuit ouvert. Lorsqu’on appuie dessus, il ferme le circuit. Le courant peut donc passer.
 
-Schéma électrique d’un interrupteur:<img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\switch diagram.png" alt="switch diagram" style="zoom:150%;" />
+Schéma électrique d’un interrupteur:<img src="img\switch diagram.png" style="zoom:150%;" />
 
 ## L’interrupteur directement en série avec le circuit
 
-Pour utiliser l’interrupteur, il faut le placer en série avec le reste du circuit. On peut placer l’interrupteur avant, après celui-ci ou entre la résistance et la LED puisque dans tous les cas, le courant ne pourra plus passer. Voici un premier schéma qui pourrait convenir:  <img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\circuit.png" alt="circuit" style="zoom:80%;" />
+Pour utiliser l’interrupteur, il faut le placer en série avec le reste du circuit. On peut placer l’interrupteur avant, après celui-ci ou entre la résistance et la LED puisque dans tous les cas, le courant ne pourra plus passer. Voici un premier schéma qui pourrait convenir:  <img src="img\circuit.png" alt="circuit" style="zoom:80%;" />
 
 Les interrupteurs des kits sont des omron B3F, voici le schéma interne de l’interrupteur:
 
- <img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\omron b3f.png" alt="omron b3f" style="zoom:50%;" />
+ <img src="img\omron b3f.png" alt="omron b3f" style="zoom:50%;" />
 
 Lorsque les pins de l’interrupteur sont sur les deux côtés, les deux pins du dessus sont toujours connectés entre eux (tous comme les deux du dessous). On peut donc brancher le pin 3 et le 1 par exemple.
 
