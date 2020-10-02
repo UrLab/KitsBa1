@@ -1,17 +1,29 @@
-# Partie 2 - Utilisation d'un switch
+# Partie 2 - Utilisation d'un interrupteur (switch)
 
-## Matériel utilisé dans cette partie
+Pour cette partie, nous allons rajouter un bouton que nous allons utiliser de différente manières.
 
-Vous aurez besoin du même matériel que pour la partie précédente si ce n’est d’un switch en plus.
+## Matériel utilisé dans cette partie:
 
 * 1 * Arduino UNO
 * 1 * LED (Rouge, verte ou bleue)
-* 2 * Cable male-male 10cm
+* 4 * Câbles male-male 10cm
 * 1 * résistance 220 ohm
 * 1 * half-sized breadboard
-* 1 * switch (bouton)
+* 1 * interrupteur (bouton)
 
-## Le switch
+## L'interrupteur
+Un interrupteur est un dispositif permettant d'ouvrir une partie du circuit. Une fois le circuit ouvert, le courant ne peut plus passer. Par défaut l'interrupteur du kit garde le circuit ouvert. Lorsqu’on appuie dessus, il ferme le circuit. Le courant peut donc passer.
 
-Un switch est un simple intérupteur avec un bouton poussoir, en théorie, il suffit de l’insérer quelque part dans le circuit. Par défaut, il garde le circuit ouvert (le courant ne passera donc pas dans cette partie du circuit) et lorsqu’on appuie dessus, il ferme le circuit, le courant peut donc passer.
-En pratique, les intérupteurs qui sont dans les kits ont 4 pins il faut donc faire attention à quel pin on va les brancher. 2 à 2 pins sont relié enssemble, les 4 pins sont donc relié uniquement lorsqu’on appuie sur le bouton. Les 2 pins qui sont toujours relié sont les 2 pins les plus proches, sur la photo ci-contre, ce sont les 2 pins à droite et les deux pins à gauche. <img src="img/part 2 - switch.jpg" alt="switch" style="zoom:80%;" />
+Schéma électrique d’un interrupteur:<img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\switch diagram.png" alt="switch diagram" style="zoom:150%;" />
+
+## L’interrupteur directement en série avec le circuit
+
+Pour utiliser l’interrupteur, il faut le placer en série avec le reste du circuit. On peut placer l’interrupteur avant, après celui-ci ou entre la résistance et la LED puisque dans tous les cas, le courant ne pourra plus passer. Voici un premier schéma qui pourrait convenir:  <img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\circuit.png" alt="circuit" style="zoom:80%;" />
+
+Les interrupteurs des kits sont des omron B3F, voici le schéma interne de l’interrupteur:
+
+ <img src="D:\urlab\KitBA1\KitsBa1\doc\01 - Kit débutant\Partie 02 - Switch\img\omron b3f.png" alt="omron b3f" style="zoom:50%;" />
+
+Lorsque les pins de l’interrupteur sont sur les deux côtés, les deux pins du dessus sont toujours connectés entre eux (tous comme les deux du dessous). On peut donc brancher le pin 3 et le 1 par exemple.
+
+## Utiliser l’Arduino pour détecter quand l’interrupteur est fermé ou ouvert
