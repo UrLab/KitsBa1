@@ -12,5 +12,5 @@ void setup() {
 
 void loop() {
   val = digitalRead(INPIN);
-  digitalWrite(LEDPIN, val);
+  digitalWrite(LEDPIN, !val);  // On prend l'inverse de ce que le bouton envoie comme information pour allumer la LED quand on appuie sur le boutton
 }
