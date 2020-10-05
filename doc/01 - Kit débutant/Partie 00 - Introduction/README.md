@@ -128,6 +128,8 @@ void loop(){ // Le code qui se répète tout le temps où l'arduino est allumé
 Le résultat de ce morceau de code pourrait cependant vous étonner. Tout ce que vous verrez sera une LED allumée mais plus faiblement qu'avant. Ce qu'il se passe, c'est que la LED clignote bien, mais tellement vite que ses états allumés et éteint ne sont pas distinguables. Pour pouvoir distinguer l'état allumé de l'état éteint, il faut ralentir la vitesse d'exécution de notre code. Pour ce faire, on va utiliser la fonction `delay`, qui permet de faire un pause dans le code. Cette fonction prend un nombre en paramètre. Ce paramètre est le nombre de milliseconde pendant lesquelles le programe sera en pause. En ajoutant cette fonction entre nos fonctions `digitalWrite`, on va pouvoir faire alterner les états de la LED plus lentement. Le code ressemblera plus à quelque chose comme ça :
 
 ```c
+#include <Arduino.h>
+
 void setup(){
     pinMode(13, OUTPUT);
 }
