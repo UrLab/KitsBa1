@@ -43,6 +43,7 @@ Le schéma sera donc le suivant :
 
 ![Led dans pin 13](img/circuit.png)
 
+On peut voir sur le schéma, la partie de la LED qui est reliée à la pin 13 est "coudée". C'est pour indiquer que c'est la longe patte de la LED de ce côté là.
 Le code lui, ne changera pas. Vous voila donc avec un circuit qui fait clignoter une LED à l'aide d'un Arduino !
 
 ## Index
