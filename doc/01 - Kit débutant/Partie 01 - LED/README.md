@@ -39,6 +39,12 @@ Pour pouvoir faire clignoter cette LED depuis l'arduino, il va donc falloir fair
 
 La résistance va donc être <a href="#mount_serial">montée en série*</a> avec la LED. Comme vu plus haut, le sens dans lequel la résistance est mise par rapport à la LED n'a pas d'importance.
 
+Le schéma sera donc le suivant :
+
+![Led dans pin 13](img/circuit.png)
+
+Le code lui, ne changera pas. Vous voila donc avec un circuit qui fait clignoter une LED à l'aide d'un Arduino !
+
 ## Index
 * <a name="index_voltage">**Voltage**</a>: Le voltage, ou tension, est la différence de potentiel entre deux bornes d'un <a href="index_dipole">dipôle</a>.
 * <a name="index_resistance">**Résistance**</a>: Composant (dipôle) régi par la loi d'Ohm, qui résiste au passage du courant.
