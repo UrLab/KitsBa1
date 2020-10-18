@@ -36,6 +36,9 @@ Une fois le logiciel installé, vous pouvez le lancer et vous arriverez sur quel
 3) Cette partie est la plus importante, c'est celle dans laquelle nous écrirons le code C qui sera exécuté sur notre arduino. Par défaut, l'IDE écrit déjà quelque lignes. Nous allons les analyser un peu plus loin.
 4) Cette dernière partie est la console. A cet endroit seront écrits des messages importants concernant la compilation[*](#index_compiler) du code et le transfert du code vers l'arduino.
 
+### <a name="save">Enregistrement par projet</a>
+Le logiciel Arduino IDE fonctionne par projet, c'est-à-dire que chaque fichier sauvegardé font partie d'un projet. Si vous souhaitez suivre le wiki, exercices par exercices, nous vous proposons de soit remplacé votre code à chaque exercices ou bien de faire un projet par exercice. Si vous faites tous les exercices dans le même projet, il risque d'y avoir des conflits entre les fichiers des différents exercices.
+
 ## <a name="analyse">Analyse des lignes de code par défaut</a>
 Jetons un oeil aux lignes de code écrites par défaut par l'IDE :
 ```c
