@@ -20,3 +20,4 @@ Un kit basique pour commencer à programmer sur arduino et à jouer avec un peu 
 * 4 * male-male jumper 20cm
 * 1 * Photorésistance
 * 1 * Thermistance
+* 1 * Piezo-electric Buzzer
